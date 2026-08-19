@@ -111,7 +111,7 @@ on the head) while correctly reading their vests as compliant — see §5.
 
 ## License
 
-Code in this repository: MIT (or your choice). The Construction-PPE dataset and Ultralytics
+The Construction-PPE dataset and Ultralytics
 YOLO weights are licensed **AGPL-3.0** — see [Ultralytics licensing](https://www.ultralytics.com/license)
 before any commercial use, and cite the dataset as:
 
