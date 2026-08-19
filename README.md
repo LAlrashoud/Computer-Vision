@@ -6,8 +6,8 @@ fuses two YOLO tasks — **pose estimation** (to locate each person's head and c
 **object detection** (to find the actual PPE items) — so that PPE items are attributed to the
 *right person*, not just detected loose in the frame.
 
-Built as the capstone for **Computer Vision for Developers with Ultralytics**, SDAIA Academy
-(delivered via Learning Space), cohort: Lubna Alrashoud, Jory Alsuwailem, Layan Alnasser.
+Built as the capstone project for **Computer Vision for Developers with Ultralytics**, a 5-day,
+30-hour on-site training program delivered by SDAIA Academy via Learning Space.
 See [SDAIA Academy on GitHub](https://github.com/SDAIAAcademy).
 
 ## What it does
@@ -41,6 +41,21 @@ The image dataset auto-downloads the first time the notebook references `constru
 download it manually from the link above and upload it in the notebook (instructions in §1.2),
 or use the Kaggle API if you have a token.
 
+## Repository structure
+
+```
+.
+├── PPE_Compliance_Capstone.ipynb   # the whole project: setup -> train -> infer -> eval -> video -> export
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+Trained weights, the dataset, and Ultralytics run folders (`runs_ppe/`, `datasets/`) are
+intentionally **not** committed — see `.gitignore`. If you want to share your trained weights,
+attach them as a GitHub Release asset or link a Drive folder here instead of committing the
+binary.
+
 ## How to run
 
 1. Open `PPE_Compliance_Capstone.ipynb` in Google Colab.
@@ -55,7 +70,7 @@ or use the Kaggle API if you have a token.
      **§5 Video pipeline** (`model.track` + OpenCV, produces `ppe_compliance_output.mp4`),
      **§6 Export** (`model.export(format="onnx")`) all run in order using the model you trained
      in §2.
-4. Keep the executed output when you save/commit the notebook as evidence of the real run.
+4. Keep the executed output when you save/commit the notebook — that's the evidence of a real run.
 
 ## Expected output
 
@@ -96,7 +111,7 @@ on the head) while correctly reading their vests as compliant — see §5.
 
 ## License
 
-The Construction-PPE dataset and Ultralytics
+Code in this repository is released under the MIT License. The Construction-PPE dataset and Ultralytics
 YOLO weights are licensed **AGPL-3.0** — see [Ultralytics licensing](https://www.ultralytics.com/license)
 before any commercial use, and cite the dataset as:
 
