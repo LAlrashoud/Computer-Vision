@@ -1,0 +1,35 @@
+# Datasets (auto-downloaded by the notebook, don't commit)
+datasets/
+construction-ppe/
+videos/
+
+# Ultralytics run outputs, weights, exports
+runs/
+runs_ppe/
+*.pt
+*.onnx
+*.engine
+*.tflite
+*.torchscript
+*.mlpackage/
+
+# Generated video output
+*.mp4
+*.avi
+
+# Secrets / credentials
+kaggle.json
+.kaggle/
+*.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
