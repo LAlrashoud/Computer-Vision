@@ -106,9 +106,11 @@ on the head) while correctly reading their vests as compliant — see §5.
 
 ## License
 
-Code in this repository is released under the MIT License. The Construction-PPE dataset and Ultralytics
-YOLO weights are licensed **AGPL-3.0** — see [Ultralytics licensing](https://www.ultralytics.com/license)
-before any commercial use, and cite the dataset as:
+This project is built on Ultralytics YOLO and the Construction-PPE dataset, both licensed
+**AGPL-3.0**. As a project that depends on AGPL-licensed code, this repository is offered under
+those same AGPL-3.0 terms rather than a separate permissive license — see
+[Ultralytics licensing](https://www.ultralytics.com/license) for details (Ultralytics also offers
+a separate paid Enterprise License for commercial use outside AGPL terms). Cite the dataset as:
 
 > Dalvi, M., Singh, N., Bhingarde, S., Chalke, K. (2025). *Construction-PPE: Personal Protective
 > Equipment Detection Dataset* (v1.0.0). Ultralytics.
