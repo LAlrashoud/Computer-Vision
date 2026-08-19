@@ -51,11 +51,6 @@ or use the Kaggle API if you have a token.
 └── .gitignore
 ```
 
-Trained weights, the dataset, and Ultralytics run folders (`runs_ppe/`, `datasets/`) are
-intentionally **not** committed — see `.gitignore`. If you want to share your trained weights,
-attach them as a GitHub Release asset or link a Drive folder here instead of committing the
-binary.
-
 ## How to run
 
 1. Open `PPE_Compliance_Capstone.ipynb` in Google Colab.
